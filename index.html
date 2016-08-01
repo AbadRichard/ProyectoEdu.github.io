@@ -1,182 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="icon" href="img/one piece.ico">
-<title>AbadRichard.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  #myBtn {
+      width: 300px;
+      padding: 10px;
+      font-size:20px;
+      position: absolute;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      bottom: 50px;
+      z-index: 9999;
+  }
+</style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="60" onload="diguja_texto_cabezera() ">
-      	<canvas  id="canvas_cabezera"></canvas>       
-<nav class="navbar navbar-inverse "  data-spy="affix" data-offset-top="60">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-				<span class="sr-only"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a   href="" class="navbar-brand actives ">AbadRichard</a>
-		</div>
-	
-		<div class="collapse navbar-collapse navbar-ex1-collapse">
-			<ul class="nav navbar-nav">
-				<li><a  class="btn_menu" href="">contenido</a></li>
-				<li><a  class="btn_menu"  href="">contenido</a></li>
-				<li><a  class="btn_menu" href="">contenido</a></li>
-			</ul>	
-		</div>
-	</div>	
-</nav><br><br>
-<div class="container-fluid">
-    <div class="row">
-    <div class="col-lg-2"></div>
-    <div class="col-lg-8">
-      <div class="col-lg-4">
-        <div class="panel-group">
-          <div class="panel panel-primary">
-            <div class="panel-body" >
-                         <div class="vista_img vista_texto " >
-						     <a href="index.html">
-                 <img src="img/html-texto.jpg" class="img-responsive "/>
-                 </a>   
-        			      <div class="container-fluid  color_fondo   ">
-                      	   <center><a href="../html/contenedor-html.html">
-                      		 <img src="img/html.jpg" class="img-responsive rotar_img img_html"/></a>
-                      	   </center>  
-                            </div>
-                           </div>
-                                                
-                        </div> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="panel-group">
-                    <div class="panel panel-primary">
-                    <div class="panel-body">
-                   <div class="vista_img vista_texto " > <a href="index.html">
-                        <img src="img/java-texto.jpg" class="img-responsive "/></a>
-        			     <div class="container-fluid  color_fondo   ">
-                      	<center>
-                      		 <img src="img/java.jpg" class="img-responsive rotar_img img_java"/>
-                      	<div class="container-fluid  color_fondo   ">
-                      	<button class="btn_java">JAVA</button>
-                      	</div>
-        			    <p>podemos encontrar contenidos  de java conexión a base de datos suerte! </p>
-        			  <a href="../java/contenedor-java.html" class="btn btn-primary " >INGRESAR</a>
-                           </center>  
-                            </div>
-                       </div>
-                     </div>
-                 </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="panel-group">
-                    <div class="panel panel-primary">
-                        <div class="panel-body">
-                        <div class="vista_img vista_texto " ><a href="index.html">
-                        	<img src="img/android-texto.jpg" class="img-responsive "/></a>
-                        <div class="container-fluid  color_fondo   ">
-                <a href="../android/contenedor-android.html">
-                      	 <div class="android">
-								    <div class="cabeza">
-      									    <div class="l_antena"></div>
-      									    <div class="r_antena"></div>
-      									    <div class="l_ojo"></div>
-      									    <div class="r_ojo"></div>
-      								    </div>
-      								    <div class="cuerpo">
-      										<div class="l_mano"></div>
-      										<div class="r_mano"></div>
-      										<div class="l_pie"></div>
-      										<div class="r_pie"></div>
-      									</div>
-							 </div>
-               </a>
-						   </div>
+<body>
 
-              </div>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="container">
+  <h2>Modal Events - hide.bs.modal</h2>
+  <h1>este es una imagen de jpg</h1>
+  <img src="img/android-texto.jpg">
+  <h1>este es una imagen de png</h1>
+  <img src="img/android-texto.png">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-md" id="myBtn">Hide Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
         </div>
-        <div class="col-lg-2"></div>
-	</div>
-    <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <div class="col-lg-4">
-                    <div class="panel-group">
-                        <div class="panel panel-primary">
-                            <div class="panel-body">
-                              <div class="vista_img vista_texto " ><a href="index.html">
-						     	<img src="img/arduino-texto.jpg" class="img-responsive "/>   </a>
-        			      		<div class="container-fluid  color_fondo   ">
-                      	   		<center><a href="../arduino/contenedor-arduino.html">
-                      			 <img src="img/logo-arduino.jpg" class="img-responsive rotar_img img_html"/></a>
-                      	   		</center>  
-                            	</div>
-                           	   </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="col-lg-4">
-                    <div class="panel-group">
-                        <div class="panel panel-primary">
-                            <div class="panel-body">
-                             <div class="vista_img vista_texto " ><a href="index.html">
-						     	<img src="img/javascript-texto.jpg" class="img-responsive "/>  </a> 
-        			      		<div class="container-fluid  color_fondo   ">
-                      	   		<center><a href="../javascript/contenedor-javascript.html">
-                      			 <img src="img/logo-javascript.jpg" class="img-responsive rotar_img img_html"/></a>
-                      	   		</center>  
-                            	</div>
-                           	   </div>
-                    		</div>  
-                    	</div>
-                    </div>
-            </div>
-            <div class="col-lg-4">
-                    <div class="panel-group">
-                        <div class="panel panel-primary">
-                           <div class="panel-body">
-                             <div class="vista_img vista_texto " ><a href="index.html">
-						     	<img src="img/php-texto.jpg" class="img-responsive "/>   </a>
-        			      		<div class="container-fluid  color_fondo   ">
-                      	   		<center><a href="../php/contenedor-php.html">
-                      			 <img src="img/logo-php.jpg" class="img-responsive rotar_img img_html"/></a>
-                      	   		</center>  
-                            	</div>
-                           	   </div>
-                    		</div> 
-                        </div>
-                    </div>
-            </div>
+        <div class="modal-body">
+          <p>The <strong>hide.bs.modal</strong> event occurs modal is about to be hidden.</p>
+          <p>Click the "Hide Modal" button to trigger the hide method (which will trigger the hide.bs.modal event).</p>
         </div>
-        <div class="col-lg-2"></div>
+      </div>
+      
     </div>
+  </div>
 </div>
-<br>
-<br><br>
-
-<footer><center>
-	<div class="container-fluid color_pie_pagina">
-		Abad Mayta juan Richard
-	 
-	
-	</div></center>
-</footer>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+ 
+<script>
+$(document).ready(function(){
+    $("#myModal").modal("show");
+    
+    $("#myBtn").click(function(){
+        $("#myModal").modal("hide");
+    });
+    
+});
+</script>
 
 </body>
 </html>
+
